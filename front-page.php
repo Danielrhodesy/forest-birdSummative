@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
-<h1>Front Page</h1>
+<div class="carousel">
+</div>
 
+<div class="main-content">
+</div>
 
 
 
