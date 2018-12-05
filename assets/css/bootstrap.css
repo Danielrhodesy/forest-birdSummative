@@ -3900,8 +3900,6 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -3927,9 +3925,9 @@ input[type="button"].btn-block {
   border-top-right-radius: 0;
 }
 
-.nav-pills .nav-link {
+/* .nav-pills .nav-link {
   border-radius: 0.25rem;
-}
+} */
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
