@@ -23,3 +23,16 @@
     add_action('init', 'add_nav_menu');
     
     require_once get_template_directory().'/class-wp-bootstrap-navwalker.php';
+
+
+
+    function addCustomLogo(){
+        add_theme_support('custom-logo', array(
+            'height' => 200,
+            'width' => 510,
+            'flex-width' => true,
+            'flex-height' => true
+        ));
+    }
+    add_action('init', 'addCustomLogo');
+    

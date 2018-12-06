@@ -6,18 +6,28 @@
         <div class="carousel-item active">
             <div class="c-text">
                 <div class="c-text-container">
-                    <p>Saving Nature</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequatur laudantium repudiandae nesciunt voluptas eum, incidunt inventore alias molestias? Natus voluptate reiciendis</p>
+                    <p class="car-header">Saving Nature</p>
+                    <p class="car-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequatur laudantium repudiandae nesciunt voluptas eum, incidunt inventore alias molestias? Natus voluptate reiciendis</p>
                 </div>
             </div>
             <img class="c-image" src="./wp-content/themes/forest&birdTheme/assets/images/f&bpic1.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-            <div class="c-text"></div>
+            <div class="c-text">
+                <div class="c-text-container">
+                    <p class="car-header">Saving Nature</p>
+                    <p class="car-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequatur laudantium repudiandae nesciunt voluptas eum, incidunt inventore alias molestias? Natus voluptate reiciendis</p>
+                </div>
+            </div>
             <img class="c-image" src="..." alt="Second slide">
         </div>
         <div class="carousel-item">
-            <div class="c-text"></div>
+            <div class="c-text">
+                <div class="c-text-container">
+                        <p class="car-header">Saving Nature</p>
+                        <p class="car-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequatur laudantium repudiandae nesciunt voluptas eum, incidunt inventore alias molestias? Natus voluptate reiciendis</p>
+                </div>
+            </div>
             <img class="c-image" src="..." alt="Third slide">
         </div>
     </div>

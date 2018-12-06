@@ -10,7 +10,19 @@
                 </span>
             </div>
         </div>
-        <div class="second-footer">
+        <div class="nav second-footer">
+            <?php
+                wp_nav_menu( array(
+                    'theme_location'    => 'footer_nav',
+                    'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'    => 'navlink-m',
+                    'container_id'      => '',
+                    'menu_class'        => 'nav second-footer main-nav',
+                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker'            => new WP_Bootstrap_Navwalker()
+                ) );
+            ?>
         </div>
     </footer>
     

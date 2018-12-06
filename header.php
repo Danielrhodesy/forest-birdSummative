@@ -11,8 +11,22 @@
 
     <div class="header-container row">
         <div class="header-logo col-8">
-            <img src="./wp-content/themes/forest&birdTheme/assets/images/logo.png" alt="Logo Image">
+            <?php
+                $custom_logo = get_theme_mod('custom_logo');
+                $logo_url = wp_get_attachment_image_url($custom_logo, 'medium');
+            ?>
+            <?php if($custom_logo): ?>
+                <a class="navbar-brand" href="#">
+                    <img src="<?= $logo_url  ?>" height="50" alt="">
+                </a>
+            <?php else: ?>
+                <a class="navbar-brand" href="#"><?= bloginfo('name');  ?></a>
+            <?php endif; ?>
         </div>
+        
+        <!-- <img src="./wp-content/themes/forest&birdTheme/assets/images/logo.png" alt="Logo Image"> -->
+
+
         <div class="header-topnav col-4">   
             <div class="d-nav-container">
                 <nav class="d-nav">
@@ -33,29 +47,21 @@
     </div>
 
 
-    <ul class="nav main-nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item home">
-            <a class="nav-link-m" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-m" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Land</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-m" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Water</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-m" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Oceans</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-m" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Climate</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link-m" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Support Us</a>
-        </li>
-    </ul>
+    <div class="nav main-nav" id="myTab" role="tablist">
+        <?php
+            wp_nav_menu( array(
+                'theme_location'    => 'header_nav',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'    => 'navlink-m',
+                'container_id'      => 'home-tab',
+                'menu_class'        => 'nav main-nav',
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'            => new WP_Bootstrap_Navwalker()
+            ) );
+        ?>
+    </div>
    
-
-    
 
     
     
