@@ -49,12 +49,12 @@
 
 <div class="main-content">
     <div class="text-container">
-        <h4 class="hpage-header">Forest & Bird is Aotearoa/New Zealand's leading independent conservation organisation.</h4>
-        <p class="hpage-content">We are nature's voice and work to defend nature – across our Land, Fresh water, Oceans and Climate. But we can't do it without your support.</p>
+        <h4 class="hpage-header"><?php echo get_theme_mod('home_header_title_text_setting'); ?></h4>
+        <p class="hpage-content"><?php echo get_theme_mod('home_text_setting'); ?></p>
     </div>
 </div>
 
-
+<!-- We are nature's voice and work to defend nature – across our Land, Fresh water, Oceans and Climate. But we can't do it without your support. -->
 
 
 <?php get_footer(); ?>
