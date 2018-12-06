@@ -1,13 +1,7 @@
 <?php
 
 function custom_theme_customizer($wp_customize){
-    $wp_customize->add_panel('Shop_Page_Panel', array(
-        'title'             => __('Shop Page' , 'forest&birdSummative'),
-        'priority'          => 30,
-        'description'       => 'This panel will hold the shop page sections'
-    ));
-
-    $wp_customize->add_panel('Shop_Page_Panel', array(
+      $wp_customize->add_panel('Shop_Page_Panel', array(
         'title'             => __('Shop Page' , 'forest&birdSummative'),
         'priority'          => 30,
         'description'       => 'This panel will hold the shop page sections'
@@ -35,11 +29,7 @@ function custom_theme_customizer($wp_customize){
    );
 
 
-   $wp_customize->add_panel('Terrain_Page_Panel', array(
-    'title'             => __('Terrain Page' , 'forest&birdSummative'),
-    'priority'          => 20,
-    'description'       => 'This panel will hold the terrain page sections'
-    ));
+
 
     $wp_customize->add_panel('Terrain_Page_Panel', array(
         'title'             => __('Terrain Page' , 'forest&birdSummative'),
@@ -50,7 +40,7 @@ function custom_theme_customizer($wp_customize){
     $wp_customize->add_section('terrain_header_image_section', array(
         'title'             => __('Header Image', 'forest&birdSummative'),
         'priority'          => 20,
-        'panel'             => 'terrain_Page_Panel'
+        'panel'             => 'Terrain_Page_Panel'
     ));
     $wp_customize->add_setting('terrain_header_image_setting', array(
         'default'           => '',
@@ -66,6 +56,13 @@ function custom_theme_customizer($wp_customize){
             'settings'   => 'terrain_header_image_setting'
         )
     )
+
+
+
+
+
+
+    
 );
 
 
