@@ -31,15 +31,18 @@
             <div class="d-nav-container">
                 <nav class="d-nav">
                     <ul class="d-nav-list">
-                        <li class="d-list">
-                            <a class="nav-link-d active" href="">Donate</a>
-                        </li>
-                        <li class="d-list">
-                            <a class="nav-link-d" href="">Subscribe</a>
-                        </li>
-                        <li class="d-list">
-                            <a class="nav-link-d" href="">Volunteer</a>
-                        </li>
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location'    => 'donation_nav',
+                                'depth'             => 2,
+                                'container'         => 'div',
+                                'container_class'    => 'navlink-m',
+                                'container_id'      => 'donate-tab',
+                                'menu_class'        => 'nav d-nav-list',
+                                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                                'walker'            => new WP_Bootstrap_Navwalker()
+                            ) );
+                        ?>
                     <ul>
                 </nav>
             </div>
@@ -65,3 +68,12 @@
 
     
     
+                        <!-- <li class="d-list">
+                            <a class="nav-link-d active" href="">Donate</a>
+                        </li>
+                        <li class="d-list">
+                            <a class="nav-link-d" href="">Subscribe</a>
+                        </li>
+                        <li class="d-list">
+                            <a class="nav-link-d" href="">Volunteer</a>
+                        </li> -->

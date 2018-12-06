@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<?php
+    /* Template Name: Donation Template */
+ ?>
+
 <div class="donation-header-container">
     <div class="d-header">
         <p class="d-header-text">Donate to Forest & Bird</p>

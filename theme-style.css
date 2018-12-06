@@ -1,0 +1,267 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Muli', sans-serif; */
+
+
+
+body{
+    margin: 0px;
+} 
+
+.header-container {
+    margin: 0px;
+    height: 190px;
+    width: 100%;
+
+}
+
+#front_page_banner{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-logo {
+    padding-top: 40px;
+    padding-left: 110px;
+}
+
+/* HEADER NAVS */
+
+/* DONATION NAV */
+
+.d-nav{
+
+    left: 50px;
+    height: 40px;
+    width: 63%;
+    border-radius: 0px 0px 10px 10px;
+
+    background-color: #A01D6B;
+}
+
+.d-list {
+    display: inline-block;
+}
+
+.nav-link-d {
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 7px 15px;
+    
+}
+
+a{
+    color:white;
+
+}
+
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+/* MAIN NAV */
+
+.main-nav {
+    height: 60px;
+    background-color: #243435;
+    
+}
+
+.home {
+    margin-left: 120px;
+}
+
+.nav-item {
+    height: 142px;
+}
+
+.nav-link-m {
+    margin-left: 50px;
+    padding: 18px 30px 17px 30px;
+    /* margin: 0px 10px; */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nav-link-m:hover{
+    background-color: #3e605f;
+}
+
+.nav-link-m:focus {
+    background-color: #355655;
+}
+
+
+
+/* CAROUSEL */
+
+.carousel {
+    height: 670px;
+    width: 100%;
+
+    background-color: darkcyan;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.carousel-item {
+    height: 670px;
+    width: 100%;
+    background-color: burlywood; 
+}
+
+.c-text {
+    width: 40%;
+    height: 100%;
+   background-color: #1C2929;
+}
+
+.c-image {
+    width: 60%;
+    height: 100%;
+    background-color: #A01D6B;
+}
+
+.c-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-text-container {
+    width: 55%;
+    height: 80%;
+}
+
+.car-header {
+    font: bold;
+    font-size: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.car-text {
+    font: 300;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    height: 344px;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-container {
+    height: 250px;
+    width: 60%;
+    /* background-color: aqua; */
+   
+}
+
+.hpage-header {
+    font: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.hpage-content {
+    font: 500;
+    font-size: 24px;
+    padding: 10px;
+
+}
+
+/* FOOTER */
+
+footer {
+    height: 350px;
+    width: 100%;
+
+    background-color:#243435;
+
+}
+
+.main-footer{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    height: 71.5%;
+    width: 60%;
+    margin-top: 40px;
+    /* background-color: aqua; */
+}
+
+.circle-btn {
+    height: 200px;
+    width: 210px;
+
+    border-radius: 50%;
+   
+    background-color: #355655;
+}
+
+.second-footer {
+    height: 20%;
+    width: 100%;
+    
+    background-color: #355655;
+}
+
+
+/* SHOP PAGE */
+
+.shop-image {
+    width: 100%;
+    height: 400px;
+    background-color: #3e605f;
+}
+
+.shop-text-container {
+    display: flex;
+    justify-content: space-around;
+    /* align-content: center; */
+    width: 100%;
+    height: 300px;
+    /* background-color: red; */
+}
+
+.shop-text-inner {
+    margin-top: 1.5%;
+    height: 80%;
+    width: 60%;
+    /* background-color: #A01D6B; */
+}
+
+.shop-catalouge {
+    width: 60%;
+    height: 450px;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+
+
+
+

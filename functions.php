@@ -13,10 +13,12 @@
     }
     add_action('wp_enqueue_scripts', 'addCustomThemeStyles');
 
+    require get_parent_theme_file_path('/addons/custom_customizer.php');
 
         
     function add_nav_menu(){
         add_theme_support('menus');
+        register_nav_menu('donation_nav', 'This is the navigation which appears at the donation bar');
         register_nav_menu('header_nav', 'This is the navigation which appears at the top of the page');
         register_nav_menu('footer_nav', 'This is the navigation which appears at the bottom of the page');
     }
