@@ -10,7 +10,7 @@
     <body>
 
     <div class="header-container row">
-        <div class="header-logo col-8">
+        <div class="header-logo col-12">
             <?php
                 $custom_logo = get_theme_mod('custom_logo');
                 $logo_url = wp_get_attachment_image_url($custom_logo, 'medium');
@@ -27,7 +27,7 @@
         <!-- <img src="./wp-content/themes/forest&birdTheme/assets/images/logo.png" alt="Logo Image"> -->
 
 
-        <div class="header-topnav col-4">   
+        <div class="header-topnav">   
             <div class="d-nav-container">
                 <nav class="d-nav">
                     <ul class="d-nav-list">

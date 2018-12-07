@@ -3,6 +3,9 @@
 <div class="carousel">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner ">
+          <!-- //call to custom post type -->
+        <!-- if -->
+        <!-- while -->
         <div class="carousel-item active">
             <div class="c-text">
                 <div class="c-text-container">
@@ -12,6 +15,8 @@
             </div>
             <img class="c-image" src="./wp-content/themes/forest&birdTheme/assets/images/f&bpic1.jpg" alt="First slide">
         </div>
+        <!-- endwhile -->
+        <!-- endif -->
         <div class="carousel-item">
             <div class="c-text">
                 <div class="c-text-container">

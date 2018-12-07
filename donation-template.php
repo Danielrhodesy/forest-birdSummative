@@ -6,10 +6,10 @@
 
 <div class="donation-header-container">
     <div class="d-header">
-        <p class="d-header-text">Donate to Forest & Bird</p>
+        <p class="d-header-text header">Donate to Forest & Bird</p>
     </div>
     <div class="d-subheader-text">
-        <p class="d-subheader">Protecting our native plants, animals and wild places, on land and in our oceans. Help us to help nature</p>
+        <p class="d-subheader sub-header">Protecting our native plants, animals and wild places, on land and in our oceans. Help us to help nature</p>
     </div>
 </div>
 
