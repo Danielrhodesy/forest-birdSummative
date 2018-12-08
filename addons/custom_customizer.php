@@ -113,7 +113,7 @@ function custom_theme_customizer($wp_customize){
 
     $wp_customize->add_panel('Home_Page_Panel', array(
         'title'             => __('Home Page' , 'forest-birdSummative'),
-        'priority'          => 15,
+        'priority'          => 20,
         'description'       => 'This panel will hold the home page sections'
     ));
 
@@ -193,7 +193,7 @@ function custom_theme_customizer($wp_customize){
         'transport'         => 'refresh'
     ));
     $wp_customize->add_control(
-    new WP_Customize_Image_Control(
+    new WP_Customize_Control(
         $wp_customize,
         'terrain_header_image_control',
         array(
@@ -204,6 +204,132 @@ function custom_theme_customizer($wp_customize){
         ));
 
 
+    // DONATION PANEL
+
+    $wp_customize->add_panel('Donation_Page_Panel', array(
+        'title'             => __('Donation Page' , 'forest&birdSummative'),
+        'priority'          => 20,
+        'description'       => 'This panel will hold the donation page sections'
+    ));
+    //Terrain Header Image section
+    $wp_customize->add_section('Donation_header_section', array(
+        'title'             => __('Header', 'forest&birdSummative'),
+        'priority'          => 20,
+        'panel'             => 'Donation_Page_Panel'
+    ));
+    $wp_customize->add_setting('Donation_header_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'Donation_header_control',
+        array(
+            'label'      => __('Header', 'forest&birdSummative'),
+            'section'    => 'Donation_header_section',
+            'settings'   => 'Donation_header_setting'
+        )
+    ));
+
+    $wp_customize->add_setting('Donation_sub_header_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'Donation_sub_header_control',
+        array(
+            'label'      => __('Sub Header', 'forest&birdSummative'),
+            'section'    => 'Donation_header_section',
+            'settings'   => 'Donation_sub_header_setting'
+        )
+        ));
+
+    // VOLUNTEER PANEL
+
+    $wp_customize->add_panel('Volunteer_Page_Panel', array(
+        'title'             => __('Volunteer Page' , 'forest&birdSummative'),
+        'priority'          => 20,
+        'description'       => 'This panel will hold the Volunteer page sections'
+    ));
+    //Terrain Header Image section
+    $wp_customize->add_section('Volunteer_header_section', array(
+        'title'             => __('Header', 'forest&birdSummative'),
+        'priority'          => 20,
+        'panel'             => 'Volunteer_Page_Panel'
+    ));
+    $wp_customize->add_setting('Volunteer_header_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'Volunteer_header_control',
+        array(
+            'label'      => __('Header', 'forest&birdSummative'),
+            'section'    => 'Volunteer_header_section',
+            'settings'   => 'Volunteer_header_setting'
+        )
+    ));
+    $wp_customize->add_setting('Volunteer_sub_header_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'Volunteer_sub_header_control',
+        array(
+            'label'      => __('Sub Header', 'forest&birdSummative'),
+            'section'    => 'Volunteer_header_section',
+            'settings'   => 'Volunteer_sub_header_setting'
+        )
+    ));
+
+    // SUBSCRIBE PANEL
+
+    $wp_customize->add_panel('Subscribe_Page_Panel', array(
+        'title'             => __('Subscribe Page' , 'forest&birdSummative'),
+        'priority'          => 20,
+        'description'       => 'This panel will hold the Subscribe page sections'
+    ));
+    //Terrain Header Image section
+    $wp_customize->add_section('Subscribe_header_section', array(
+        'title'             => __('Header', 'forest&birdSummative'),
+        'priority'          => 20,
+        'panel'             => 'Subscribe_Page_Panel'
+    ));
+    $wp_customize->add_setting('Subscribe_header_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'Subscribe_header_control',
+        array(
+            'label'      => __('Header', 'forest&birdSummative'),
+            'section'    => 'Subscribe_header_section',
+            'settings'   => 'Subscribe_header_setting'
+        )
+    ));
+    $wp_customize->add_setting('Subscribe_sub_header_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+    new WP_Customize_Control(
+        $wp_customize,
+        'Subscribe_sub_header_control',
+        array(
+            'label'      => __('Sub Header', 'forest&birdSummative'),
+            'section'    => 'Subscribe_header_section',
+            'settings'   => 'Subscribe_sub_header_setting'
+        )
+    ));
 
 }
 

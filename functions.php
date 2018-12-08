@@ -28,13 +28,13 @@
         register_nav_menu('donation_nav', 'This is the navigation which appears at the donation bar');
         register_nav_menu('header_nav', 'This is the navigation which appears at the top of the page');
         register_nav_menu('footer_nav', 'This is the navigation which appears at the bottom of the page');
+        register_nav_menu('donation_footer_nav', 'This is the donation navigation which appears at the bottom of the page');
     }
     add_action('init', 'add_nav_menu');
     
     require_once get_template_directory().'/class-wp-bootstrap-navwalker.php';
 
-
-
+    
     function addCustomLogo(){
         add_theme_support('custom-logo', array(
             'height' => 200,

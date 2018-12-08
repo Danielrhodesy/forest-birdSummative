@@ -6,16 +6,16 @@
 
 <div class="donation-header-container">
     <div class="d-header">
-        <p class="d-header-text header">Donate to Forest & Bird</p>
+        <p class="d-header-text header"><?php echo get_theme_mod('Donation_header_setting'); ?></p>
     </div>
     <div class="d-subheader-text">
-        <p class="d-subheader sub-header">Protecting our native plants, animals and wild places, on land and in our oceans. Help us to help nature</p>
+        <p class="d-subheader sub-header"><?php echo get_theme_mod('Donation_sub_header_setting'); ?></p>
     </div>
 </div>
 
-<div class="donation-btn-container">
-    <div></div>
-    
+
+
+<div class="billing-container">
 </div>
 
 <?php get_footer();?>
