@@ -13,13 +13,7 @@
                     'walker'            => new WP_Bootstrap_Navwalker()
                 ));
                 ?>
-               
-                <!-- <span class="circle-btn d-btn">
-                </span>
-                <span class="circle-btn s-btn">
-                </span>
-                <span class="circle-btn v-btn">
-                </span> -->
+        
         </div>
         <div class="nav second-footer">
             <?php

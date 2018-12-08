@@ -1,16 +1,16 @@
 <?php
 
-// function admin_my_enqueue() {
-//     wp_enqueue_style('CustomFieldStyle', get_template_directory_uri() . '/assets/css/customFields.css', array(), '1.0.0', 'all');
-//     // wp_enqueue_script('CustomFieldScript', get_template_directory_uri() . '/assets/js/customFields.js', array(), '1.0.0', true);
-// }
-// add_action('admin_enqueue_scripts', 'admin_my_enqueue');
+function admin_my_enqueue() {
+    wp_enqueue_style('CustomFieldStyle', get_template_directory_uri() . '/assets/css/customFields.css', array(), '1.0.0', 'all');
+    // wp_enqueue_script('CustomFieldScript', get_template_directory_uri() . '/assets/js/customFields.js', array(), '1.0.0', true);
+}
+add_action('admin_enqueue_scripts', 'admin_my_enqueue');
 
 
 $metaboxes = array(
     'terrain' => array(
         'title'         => 'Terrain Information',
-        'applicableto'  => 'Terrain',
+        'applicableto'  => 'terrain',
         'location'      => 'normal',
         'priority'      => 'high',
         'fields'        => array(
@@ -60,11 +60,11 @@ function show_metaboxes($post, $args){
                     $output .= '<p>'.$field['description'].'</p>';
                     $output .= '<input type="text" name="'.$id.'" class="customField" value="'.$customValues[$id][0].'"><br><br><br>';
                 break;
-                // case 'textarea':
-                //     $output .= '<label for="'.$id.'" class="customLabel">'.$field['title'].'</label>';
-                //     $output .= '<p>'.$field['description'].'</p>';
-                //     $output .= '<textarea type="text" name="'.$id.'" class="customField-textarea" value="'.$customValues[$id][0].'"></textarea><br><br><br>';
-                // break;
+                case 'textarea':
+                    $output .= '<label for="'.$id.'" class="customLabel">'.$field['title'].'</label>';
+                    $output .= '<p>'.$field['description'].'</p>';
+                    $output .= '<textarea type="text" name="'.$id.'" class="customField-textarea" value="'.$customValues[$id][0].'"></textarea><br><br><br>';
+                break;
                 case 'number':
                     $output .= '<label for="'.$id.'" class="customLabel">'.$field['title'].'</label>';
                     $output .= '<p>'.$field['description'].'</p>';
