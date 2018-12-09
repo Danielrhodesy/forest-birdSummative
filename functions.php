@@ -1,7 +1,7 @@
 
 <?php
 
-require get_parent_theme_file_path('./addons/educational_alert.php');
+
 
     function addCustomThemeStyles(){
     
@@ -24,6 +24,8 @@ require get_parent_theme_file_path('./addons/educational_alert.php');
     // Add Images
 
     add_theme_support( 'post-thumbnails' );
+
+    require get_parent_theme_file_path('./addons/educational_alert.php');
         
     function add_nav_menu(){
         add_theme_support('menus');
