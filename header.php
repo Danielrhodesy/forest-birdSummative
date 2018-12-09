@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
+        <title>Forest & Bird</title>
         <?php wp_head(); ?>
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
     </head>
@@ -17,7 +17,7 @@
             ?>
             <?php if($custom_logo): ?>
                 <a class="navbar-brand" href="#">
-                    <img src="<?= $logo_url  ?>" height="50" alt="">
+                    <img src="<?= $logo_url  ?>" alt="">
                 </a>
             <?php else: ?>
                 <a class="navbar-brand" href="#"><?= bloginfo('name');  ?></a>

@@ -10,7 +10,7 @@
             <div class="c-text">
                 <div class="c-text-container">
                     <p class="car-header">Saving Nature</p>
-                    <p class="car-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequatur laudantium repudiandae nesciunt voluptas eum, incidunt inventore alias molestias? Natus voluptate reiciendis</p>
+                    <p class="car-text">Each year a struggle of national significance decides if around 25 million eggs and chicks of native birds will live or die due to introduced predators. Forest and bird in New Zealand's leading independent environmental organisation. We have the scientific expertise and the courage to stand up for nature.</p>
                 </div>
             </div>
             <img class="c-image" src="./wp-content/themes/forest&birdTheme/assets/images/f&bpic1.jpg" alt="First slide">
@@ -20,8 +20,8 @@
         <div class="carousel-item">
             <div class="c-text">
                 <div class="c-text-container">
-                    <p class="car-header">Saving Nature</p>
-                    <p class="car-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequatur laudantium repudiandae nesciunt voluptas eum, incidunt inventore alias molestias? Natus voluptate reiciendis</p>
+                    <p class="car-header">Our Campaigns</p>
+                    <p class="car-text">The Government is about to consult on protecting our public conservation land from mining and already the mining industry are pushing back. Unless we have your support – we may not be able to save all of our precious lands. </p>
                 </div>
             </div>
             <img class="c-image" src="..." alt="Second slide">
@@ -29,8 +29,8 @@
         <div class="carousel-item">
             <div class="c-text">
                 <div class="c-text-container">
-                        <p class="car-header">Saving Nature</p>
-                        <p class="car-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequatur laudantium repudiandae nesciunt voluptas eum, incidunt inventore alias molestias? Natus voluptate reiciendis</p>
+                        <p class="car-header">Protect New Zealand’s National Parks</p>
+                        <p class="car-text">New Zealand has a long history of protecting our significant landscapes, native plants and animals in national parks. So it’s disappointing when attempts are made to erode those basic principles of protection.</p>
                 </div>
             </div>
             <img class="c-image" src="..." alt="Third slide">
