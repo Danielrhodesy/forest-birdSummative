@@ -24,7 +24,7 @@ $metaboxes = array(
             ),
             'bodyText'         => array(
                 'title'         => 'Content for body text',
-                'type'          => 'textarea'
+                'type'          => 'text'
             ),
             'imageText'         => array(
                 'title'         => 'Content for image text',

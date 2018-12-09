@@ -1,6 +1,8 @@
 
 <?php
 
+require get_parent_theme_file_path('./addons/educational_alert.php');
+
     function addCustomThemeStyles(){
     
         wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.3', 'all');

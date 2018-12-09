@@ -9,7 +9,10 @@
             <?php get_template_part('content', get_post_format()); ?>
 
         <div class="header-image">
+            <?php  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo '<div class="bg-img" style="background: url('. $url.')"></div>'; ?>
+            
             <div class="terrain-header header">
+
                 <?php if($terraintitle): ?>
                     <p><?= $terraintitle; ?></p>
                 <?php endif; ?>

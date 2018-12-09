@@ -17,7 +17,7 @@
             ?>
             <?php if($custom_logo): ?>
                 <a class="navbar-brand" href="#">
-                    <img src="<?= $logo_url  ?>" height="50" alt="">
+                    <img src="<?= $logo_url  ?>" alt="">
                 </a>
             <?php else: ?>
                 <a class="navbar-brand" href="#"><?= bloginfo('name');  ?></a>
@@ -27,7 +27,7 @@
         <!-- <img src="./wp-content/themes/forest&birdTheme/assets/images/logo.png" alt="Logo Image"> -->
 
 
-        <div class="header-topnav">   
+       <div class="header-topnav">   
             <div class="d-nav-container">
                 <nav class="d-nav">
                     <ul class="d-nav-list">
@@ -47,7 +47,7 @@
                 </nav>
             </div>
         </div>
-    </div>
+    </div> 
 
 
     <div class="nav main-nav" id="myTab" role="tablist">
