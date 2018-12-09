@@ -27,7 +27,7 @@
         <!-- <img src="./wp-content/themes/forest&birdTheme/assets/images/logo.png" alt="Logo Image"> -->
 
 
-        <div class="header-topnav">   
+       <div class="header-topnav">   
             <div class="d-nav-container">
                 <nav class="d-nav">
                     <ul class="d-nav-list">
@@ -47,7 +47,7 @@
                 </nav>
             </div>
         </div>
-    </div>
+    </div> 
 
 
     <div class="nav main-nav" id="myTab" role="tablist">

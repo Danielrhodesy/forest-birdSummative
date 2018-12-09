@@ -24,6 +24,7 @@ body{
     padding-left: 110px;
 }
 
+
 /* HEADER NAVS */
 
 /* DONATION NAV */
@@ -32,6 +33,7 @@ body{
     position: absolute;
     right: 10%;
     height: 40px;
+    width: 380px;
     border-radius: 0px 0px 10px 10px;
     background-color: #A01D6B;
 }
@@ -39,6 +41,8 @@ body{
 .d-list {
     display: inline-block;
 }
+
+
 
 .nav-link-d {
     display: table-cell;
@@ -71,8 +75,9 @@ a:hover{
     margin-left: 120px;
 }
 
-.nav-item {
-
+.menu-item {
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav-link-m {
@@ -91,16 +96,24 @@ a:hover{
     background-color: #355655;
 }
 
+.menu-item {
+    display: flex;
 
+}
+#menu-top-menu {
+    margin-top: 10px;
+    margin-left: 100px;
+    height: 80%;
+}
 
 /* CAROUSEL */
 
 .carousel {
-    height: 670px;
+    height: 100%;
     width: 100%;
 
-    background-color: darkcyan;
-}
+    /* background-color: darkcyan; */
+} 
 
 .carousel-inner {
     display: flex;
@@ -110,7 +123,7 @@ a:hover{
 .carousel-item {
     height: 670px;
     width: 100%;
-    background-color: burlywood; 
+    background-color: #3e605f; 
 }
 
 .c-text {
@@ -235,6 +248,21 @@ footer {
     background-color: #355655;
 }
 
+
+/* MAIN PAGE TABLET */
+
+@media (min-width: 720px) {
+
+    
+
+
+}
+
+
+
+
+
+
 /* SHOP PAGE */
 
 .shop-image {
@@ -315,37 +343,7 @@ hr {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* DONATION BUTTONS */
 
-.donation-btn-container {
-    height: 200px;
-    width: 100%;
-    align-items: center;
-    /* background-color: red; */
-}
-
-.donation-btn-list {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
-}
-
-.donation-btn {
-    width: 120px;
-    height: 120px;
-    border-radius: 75px;
-    background-color: #4E9321;
-    display: flex;
-    justify-content: space-around;
-}
-
-.d-btn-text {
-    color: white;
-    margin: auto 0;
-    
-}
 
 /* BILLING CONTAINER */
 
@@ -389,4 +387,16 @@ hr {
 .text-terrain-content {
     padding-top: 100px;
 
+}
+
+.terrain-btn {
+    height: 100px;
+    width: 350px;
+    color: black;
+    
+}
+
+.volunteer-form-container {
+    height: 500px;
+    width: 100%;
 }

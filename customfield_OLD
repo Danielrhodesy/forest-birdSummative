@@ -128,3 +128,7 @@ function save_metaboxes($postID){
     }
 }
 add_action('save_post', 'save_metaboxes');
+
+
+<input class="widefat" type="text" placeholder="[galleryview id=X]" name="rs-job-gallery" id="rs-job-gallery" value="<?php echo esc_attr( get_post_meta( $object->ID, 'rs_job_gallery', true ) ); ?>" size="30"/>
+<input class="widefat" type="text" placeholder="[galleryview id=X]" name="rs_job_gallery" id="rs-job-gallery" value="<?php echo esc_attr( get_post_meta( $object->ID, 'rs_job_gallery', true ) ); ?>" size="30"/>

@@ -1,6 +1,8 @@
 
 <?php
 
+
+
     function addCustomThemeStyles(){
     
         wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.3', 'all');
@@ -22,6 +24,8 @@
     // Add Images
 
     add_theme_support( 'post-thumbnails' );
+
+    require get_parent_theme_file_path('./addons/educational_alert.php');
         
     function add_nav_menu(){
         add_theme_support('menus');

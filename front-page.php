@@ -54,6 +54,43 @@
     </div>
 </div>
 
+<?php if(have_posts()): ?>
+    <?php while(have_posts()): the_post();?>
+        <div class="terrain-container">
+
+            <?php
+                $args = array(
+                    'post_type' => 'terrain',
+                    'order' => 'ASC',
+                    'orderby' => 'title'
+                );
+                $allTerrains = new WP_Query($args);
+             ?>
+             <?php if( $allTerrains->have_posts() ): ?>
+                 <?php while($allTerrains->have_posts()): $allTerrains->the_post();?>
+                     <div class="text-center mt-5">
+                       <?php if( has_post_thumbnail() ): ?>
+                           <?php  $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                           echo '<div class="bg-img" style="background: url('. $url.')"></div>'; ?>
+                       <?php endif; ?>
+                       <div class="mt-5 mb-5">
+                         <h5 class="subheader"><?php the_title(); ?></h5>
+                         <p class="body"><?php the_excerpt(); ?></p>
+                         <a class="terrain-btn" href="<?= esc_url(get_permalink()); ?>">Got to Page</a>
+
+                       </div>
+                     </div>
+                 <?php endwhile; ?>
+             <?php endif; ?>
+        </div>
+    <?php endwhile; ?>
+<?php endif; ?>
+
+
+
+
+
+
 <!-- We are nature's voice and work to defend nature – across our Land, Fresh water, Oceans and Climate. But we can't do it without your support. -->
 
 
