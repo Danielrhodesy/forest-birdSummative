@@ -270,40 +270,7 @@ function custom_theme_customizer($wp_customize){
         'priority'          => 20,
         'description'       => 'This panel will hold the Subscribe page sections'
     ));
-    //Terrain Header Image section
-    $wp_customize->add_section('Subscribe_header_section', array(
-        'title'             => __('Header', 'forest&birdSummative'),
-        'priority'          => 20,
-        'panel'             => 'Subscribe_Page_Panel'
-    ));
-    $wp_customize->add_setting('Subscribe_header_setting', array(
-        'default'           => '',
-        'transport'         => 'refresh'
-    ));
-    $wp_customize->add_control(
-    new WP_Customize_Control(
-        $wp_customize,
-        'Subscribe_header_control',
-        array(
-            'label'      => __('Header', 'forest&birdSummative'),
-            'section'    => 'Subscribe_header_section',
-            'settings'   => 'Subscribe_header_setting'
-        )
-    ));
-    $wp_customize->add_setting('Subscribe_sub_header_setting', array(
-        'default'           => '',
-        'transport'         => 'refresh'
-    ));
-    $wp_customize->add_control(
-    new WP_Customize_Control(
-        $wp_customize,
-        'Subscribe_sub_header_control',
-        array(
-            'label'      => __('Sub Header', 'forest&birdSummative'),
-            'section'    => 'Subscribe_header_section',
-            'settings'   => 'Subscribe_sub_header_setting'
-        )
-    ));
+    
 
 }
 
