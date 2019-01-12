@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<div class="main-content">
+<div class="main-content main-background">
     <div class="text-container">
         <h4 class="hpage-header"><?php echo get_theme_mod('home_header_title_text_setting'); ?></h4>
         <p class="hpage-content"><?php echo get_theme_mod('home_text_setting'); ?></p>

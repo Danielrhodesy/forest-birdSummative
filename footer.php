@@ -1,6 +1,6 @@
     
     <footer>
-        <div class="main-footer">
+        <div class="main-footer footer-background-colour">
                 <?php
                 wp_nav_menu( array(
                     'theme_location'    => 'donation_footer_nav',

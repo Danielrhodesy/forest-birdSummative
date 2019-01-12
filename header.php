@@ -10,7 +10,7 @@
     <body>
 
     <div class="header-container row">
-        <div class="header-logo col-12">
+        <div class="header-logo col-12 header-bg">
             <?php
                 $custom_logo = get_theme_mod('custom_logo');
                 $logo_url = wp_get_attachment_image_url($custom_logo, 'medium');
@@ -23,13 +23,9 @@
                 <a class="navbar-brand" href="#"><?= bloginfo('name');  ?></a>
             <?php endif; ?>
         </div>
-        
-        <!-- <img src="./wp-content/themes/forest&birdTheme/assets/images/logo.png" alt="Logo Image"> -->
-
-
-       <div class="header-topnav">   
+        <div class="header-topnav">   
             <div class="d-nav-container">
-                <nav class="d-nav">
+                <nav class="d-nav donation-nav-colour">
                     <ul class="d-nav-list">
                         <?php
                             wp_nav_menu( array(
@@ -48,9 +44,7 @@
             </div>
         </div>
     </div> 
-
-
-    <div class="nav main-nav" id="myTab" role="tablist">
+    <div class="nav main-nav header-nav-colour" id="myTab" role="tablist">
         <?php
             wp_nav_menu( array(
                 'theme_location'    => 'header_nav',
@@ -64,16 +58,3 @@
             ) );
         ?>
     </div>
-   
-
-    
-    
-                        <!-- <li class="d-list">
-                            <a class="nav-link-d active" href="">Donate</a>
-                        </li>
-                        <li class="d-list">
-                            <a class="nav-link-d" href="">Subscribe</a>
-                        </li>
-                        <li class="d-list">
-                            <a class="nav-link-d" href="">Volunteer</a>
-                        </li> -->

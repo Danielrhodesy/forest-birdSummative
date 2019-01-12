@@ -35,7 +35,7 @@ body{
     height: 40px;
     width: 380px;
     border-radius: 0px 0px 10px 10px;
-    background-color: #A01D6B;
+    /* background-color: #A01D6B; */
 }
 
 .d-list {
@@ -67,7 +67,7 @@ a:hover{
 
 .main-nav {
     height: 60px;
-    background-color: #243435;
+    /* background-color: #243435; */
     
 }
 
