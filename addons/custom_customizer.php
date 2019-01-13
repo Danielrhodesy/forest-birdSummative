@@ -7,7 +7,7 @@ function custom_theme_customizer($wp_customize){
 
      $wp_customize->add_panel('Footer_Page_Panel', array(
         'title'             => __('Footer' , 'forest-birdSummative'),
-        'priority'          => 30,
+        'priority'          => 40,
         'description'       => 'This panel will hold the Footer sections'
         ));
 
@@ -36,6 +36,30 @@ function custom_theme_customizer($wp_customize){
         )
     );
     
+    //Change bottom footer colour 
+
+    $wp_customize->add_section('footer_bottom_colour_section', array(
+        'title'             => __('Footer Colour' , 'forest-birdSummative'),
+        'priority'          => 58,
+        'panel'             => 'Footer_Page_Panel'
+        ));
+
+    $wp_customize->add_setting('footer_bottom_colour_setting', array(
+        'default' => '#355655',
+        'transport' => 'refresh'
+        ));
+
+        $wp_customize->add_control(
+            new WP_Customize_Color_Control(
+            $wp_customize,
+            'footer_bottom_colour_control',
+            array(
+                'label' => __('Footer Colour' , 'forest-birdSummative'),
+                'section' => 'footer_bottom_colour_section',
+                'settings' => 'footer_bottom_colour_setting'
+            )
+        )
+    );
     
 
      //Header Panel
@@ -195,6 +219,191 @@ function custom_theme_customizer($wp_customize){
         )
     );
             
+    // CARAOUSEL PANEL
+
+    $wp_customize->add_panel('Carousel_Panel', array(
+        'title'             => __('Carousel' , 'forest-birdSummative'),
+        'priority'          => 2,
+        'description'       => 'This panel will hold the Carousel sections'
+    ));
+
+    //Carousel Page 1 section
+    $wp_customize->add_section('carousel_page1_section', array(
+        'title'             => __('Page 1' , 'forest-birdSummative'),
+        'priority'          => 53,
+        'panel'             => 'Carousel_Panel'
+        ));
+        //Carousel Header Text
+        $wp_customize->add_setting('carousel_header_page1_setting', array(
+            'default'           => '',
+            'transport'         => 'refresh'
+        ));
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize,
+                'carousel_header_page1_control',
+                array(
+                    'label'     => __('Title' , 'forest-birdSummative'),
+                    'section'   => 'carousel_page1_section',
+                    'settings'  => 'carousel_header_page1_setting'
+                )
+            )
+        );
+
+    // Carousel Text 
+   
+    $wp_customize->add_setting('carousel_text_page1_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'carousel_text_page1_control',
+            array(
+                'label'     => __('Text' , 'forest-birdSummative'),
+                'section'   => 'carousel_page1_section',
+                'settings'  => 'carousel_text_page1_setting'
+            )
+        )
+    );
+
+    //Carousel Page 1 Colour
+
+    $wp_customize->add_setting('carousel_back_colour_page1_setting', array(
+        'default' => '#1C2828',
+        'transport' => 'refresh'
+        ));
+
+        $wp_customize->add_control(
+            new WP_Customize_Color_Control(
+            $wp_customize,
+            'carousel_back_colour_page1_control',
+            array(
+                'label' => __('Background Colour' , 'forest-birdSummative'),
+                'section' => 'carousel_page1_section',
+                'settings' => 'carousel_back_colour_page1_setting'
+            )
+        )
+    );
+
+    //Carousel Page 2 section
+    $wp_customize->add_section('carousel_page2_section', array(
+        'title'             => __('Page 2' , 'forest-birdSummative'),
+        'priority'          => 53,
+        'panel'             => 'Carousel_Panel'
+        ));
+        //Carousel Header Text
+        $wp_customize->add_setting('carousel_header_page2_setting', array(
+            'default'           => '',
+            'transport'         => 'refresh'
+        ));
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize,
+                'carousel_header_page2_control',
+                array(
+                    'label'     => __('Title' , 'forest-birdSummative'),
+                    'section'   => 'carousel_page2_section',
+                    'settings'  => 'carousel_header_page2_setting'
+                )
+            )
+        );
+    //Header Text
+    $wp_customize->add_setting('carousel_text_page2_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'carousel_text_page2_control',
+            array(
+                'label'     => __('Text' , 'forest-birdSummative'),
+                'section'   => 'carousel_page2_section',
+                'settings'  => 'carousel_text_page2_setting'
+            )
+        )
+    );
+
+    //Carousel Page 2 Colour
+
+    $wp_customize->add_setting('carousel_back_colour_page2_setting', array(
+        'default' => '#1C2828',
+        'transport' => 'refresh'
+        ));
+
+        $wp_customize->add_control(
+            new WP_Customize_Color_Control(
+            $wp_customize,
+            'carousel_back_colour_page2_control',
+            array(
+                'label' => __('Background Colour' , 'forest-birdSummative'),
+                'section' => 'carousel_page2_section',
+                'settings' => 'carousel_back_colour_page2_setting'
+            )
+        )
+    );
+
+     //Carousel Page 3 section
+     $wp_customize->add_section('carousel_page3_section', array(
+        'title'             => __('Page 3' , 'forest-birdSummative'),
+        'priority'          => 53,
+        'panel'             => 'Carousel_Panel'
+        ));
+        //Carousel Header Text
+        $wp_customize->add_setting('carousel_header_page3_setting', array(
+            'default'           => '',
+            'transport'         => 'refresh'
+        ));
+        $wp_customize->add_control(
+            new WP_Customize_Control(
+                $wp_customize,
+                'carousel_header_page3_control',
+                array(
+                    'label'     => __('Title' , 'forest-birdSummative'),
+                    'section'   => 'carousel_page3_section',
+                    'settings'  => 'carousel_header_page3_setting'
+                )
+            )
+        );
+    //Header Text
+    $wp_customize->add_setting('carousel_text_page3_setting', array(
+        'default'           => '',
+        'transport'         => 'refresh'
+    ));
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'carousel_text_page3_control',
+            array(
+                'label'     => __('Text' , 'forest-birdSummative'),
+                'section'   => 'carousel_page3_section',
+                'settings'  => 'carousel_text_page3_setting'
+            )
+        )
+    );
+
+    //Carousel Page 3 Colour
+
+    $wp_customize->add_setting('carousel_back_colour_page3_setting', array(
+        'default' => '#1C2828',
+        'transport' => 'refresh'
+        ));
+
+        $wp_customize->add_control(
+            new WP_Customize_Color_Control(
+            $wp_customize,
+            'carousel_back_colour_page3_control',
+            array(
+                'label' => __('Background Colour' , 'forest-birdSummative'),
+                'section' => 'carousel_page3_section',
+                'settings' => 'carousel_back_colour_page3_setting'
+            )
+        )
+    );
+
+
     // SHOP PANEL
 
     $wp_customize->add_panel('Shop_Page_Panel', array(
@@ -415,7 +624,19 @@ function custom_theme_customizer_styles(){
                 background-color: <?php echo get_theme_mod('main_background_colour_setting' , '#FFFFFF') ?> !important;
             }
             .footer-background-colour {
-                background-color: <?php echo get_theme_mod('footer_background_colour_setting' , '#202D2E') ?> !important;
+                background-color: <?php echo get_theme_mod('footer_background_colour_setting' , '#243334') ?> !important;
+            }
+            .footer-bottom-colour {
+                background-color: <?php echo get_theme_mod('footer_bottom_colour_setting' , '#355655') ?> !important;
+            }
+            .carousel-back-colour-page1 {
+                background-color: <?php echo get_theme_mod('carousel_back_colour_page1_setting' , '#1C2828') ?> !important;
+            }
+            .carousel-back-colour-page2 {
+                background-color: <?php echo get_theme_mod('carousel_back_colour_page2_setting' , '#1C2828') ?> !important;
+            }
+            .carousel-back-colour-page3 {
+                background-color: <?php echo get_theme_mod('carousel_back_colour_page3_setting' , '#1C2828') ?> !important;
             }
         </style>
     <?php

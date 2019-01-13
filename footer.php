@@ -15,7 +15,7 @@
                 ?>
         
         </div>
-        <div class="nav second-footer">
+        <div class="nav second-footer footer-bottom-colour">
             <?php
                 wp_nav_menu( array(
                     'theme_location'    => 'footer_nav',
